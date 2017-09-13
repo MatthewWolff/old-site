@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<style> 
-			footer 
-			{
-				text-decoration: none;
-				text-align: center;
-				font-size: 1.0em;
-			}
-
-			#footer_text
-			{
-				text-decoration: none;
-				text-align: center;
-				color: #0a2929;
-				font-size: 0.75em;
-				opacity: 0.5;
-			}
-			.typed-cursor
-			{
-			    opacity: 1;
-			    -webkit-animation: blink 0.7s infinite;
-			    -moz-animation: blink 0.7s infinite;
-			    animation: blink 0.7s infinite;
-			}
-			@keyframes blink
-			{
-			    0% { opacity:1; }
-			    50% { opacity:0; }
-			    100% { opacity:1; }
-			}
-			@-webkit-keyframes blink
-			{
-			    0% { opacity:1; }
-			    50% { opacity:0; }
-			    100% { opacity:1; }
-			}
-			@-moz-keyframes blink
-			{
-			    0% { opacity:1; }
-			    50% { opacity:0; }
-			    100% { opacity:1; }
-			}
-		</style>
 		<title>Matthew Wolff</title>
 		<meta charset = "utf-8">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1">
 		<meta name = "author" content = "Matthew Wolff">
 		<meta name = "description" content = "Meet your new hire, Matthew Wolff. He can code, he can understand genetics and biochemistry, he can make your day.">
 		<meta name = "keywords" content = "Matthew Wolff, Wolff, UW-Madison, Computer Science, CS, Genetics, Machine Learning, Bioinformatics, undergraduate">
-		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<head profile = "http://www.w3.org/2005/10/profile">
+		<link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600,600i">
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "css/style.css">
 		<link rel = "icon" type = "image/png" href = "images/favicon.png">
+    		<link rel = "stylesheet" href="css/flexslider.css">
+		<script src = "js/jquery.flexslider-min.js"></script>
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src = "js/typed.js"></script>
-
+		<script>
+     			$(window).load(function() {
+  				$('.flexslider').flexslider({
+    					animation: "slide"
+  				});
+	 		});
+    		</script>
 	</head>
 	
-	<body>	
+	<body>
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<div class="slide_text" id="slide_home">
+						<div class="slide_title">Slide_Title</div>
+						<div class="slide_subtitle">Slide_Subtitles</div>
+						<div class="slide_byline">
+							<p>I'm a junior at <a href = "http://www.wisc.edu/">University of Wisconsin-Madison</a> ('19) studying Genetics
+							and Computer Science with an interest in bioinformatics software. I've been involved in research since my
+							freshman year, ranging from calculations with metabolomic data all the way to to analyzing images of mice
+							chromosomes with the goal of measuring mitotic recombination rates. You can find a few of the projects
+							that I coded on
+							<a href = "http://www.github.com/matthewwolff">my personal GitHub</a>.</p>
+							<p>After a summer of interning as a software devloper for 
+							<a href = "http://www.thesilverlining.com/">West Bend Mutual Insurance</a>, I'm on the lookout for a
+							job in a relevant field for the school year (and beyond) and/or an internship for summer 2018.</p>
+							<p>In my free time I enjoy rock climbing and playing Overwatch with friends, as well as
+							participating in hackathons and reading science fiction novels.</p>
+							<p>Thanks for taking the time to visit my page!</p>
+						</div>
+					</div>
+					<img src="">
+				</li>
+				<li>
+					<div class="slide_text" id="slide_nonhome">
+							<div class="slide_title">Slide_Title2</div>
+							<div class="slide_subtitle">Slide_Subtitles2</div>
+							<div class="slide_byline">fucc</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 		<center>
 		<div class = "container">
 			<h1><span class = "subtitle"></span></h1>
