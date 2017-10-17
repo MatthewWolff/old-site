@@ -17,6 +17,15 @@
 				font-size: 0.75em;
 				opacity: 0.5;
 			}
+			.dark-pill .active a, .dark-pill .action a:hover, .dark-pill .active a:focus
+			{	
+				color: #fff;
+				background-color: #444444 !important;
+			}
+			.nav-pills a
+			{
+				color: #444444
+			}
 			.typed-cursor
 			{
 			    opacity: 1;
@@ -72,7 +81,19 @@
 			});
 			</script>
 		</div>
-
+		<div class="container-fluid text-center">
+      			<h4></h4>
+			<nav role="navigation">
+       				<ul class="nav nav-pills dark-pill" style="display: inline-block;">
+				  <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+				  <li><a href="https://github.com/matthewwolff/">GitHub</a></li>
+				  <li><a href="https://www.linkedin.com/in/the-matthew-wolff/">LinkedIn</a></li>
+				  <li><a href="https://drive.google.com/file/d/0BwLvfWo1QRC-UnB3V2U1Zm1sWkE/view?usp=sharing">Resumé</a></li>
+				  <li><a href="mailto:mwolff3@wisc.edu?Subject=Hello, Matthew!">Contact</a></li>
+				  <li><a data-toggle="pill" href="#Projects">Projects</a></li>
+			   	</ul>
+			</nav>
+    		</div>
 		<div class  ="container">
 			<div class = "picturesque">
 				<img src = "images/face2.png" title = "please hire me" alt = "Matthew Wolff 2017" style="border-radius: 50%" width = "40%" height = "40%">
