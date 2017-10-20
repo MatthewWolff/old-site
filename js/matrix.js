@@ -7,7 +7,7 @@
 		cw = window.innerWidth,
 		ch = $(document).height(), // larger than window.innerHeight
     charArr = ['a','c','t','g','u'],
-    maxCharCount = 150,
+    maxCharCount = 300,
     fallingCharArr = [],
     fontSize = 10,
     maxColums = cw/(fontSize);
@@ -34,7 +34,7 @@
       if(chance % 21 == 1){
       this.value = charArr[randomInt(0,charArr.length)].toUpperCase();
       }
-      this.speed = randomFloat(0.2,4);
+      this.speed = randomFloat(1,5);
 
       ctx2.fillStyle = "rgba(200,200,200,0.10)";
       ctx2.font = fontSize+"px san-serif";
@@ -55,7 +55,7 @@
     }
 
     for(var i = 0; i < maxColums ; i++) {
-      fallingCharArr.push(new Point(i*fontSize,randomFloat(-500,0)));
+      fallingCharArr.push(new Point(i*fontSize,randomFloat(-1000,0)));
     }
 
 
