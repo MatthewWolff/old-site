@@ -40,7 +40,7 @@
       ctx2.font = fontSize+"px san-serif";
       ctx2.fillText(this.value,this.x,this.y);
 
-        ctx.fillStyle = "#0F0";
+        ctx.fillStyle = "#FFF";
         ctx.font = fontSize+"px san-serif";
         ctx.fillText(this.value,this.x,this.y);
 
@@ -62,7 +62,7 @@
     var update = function()
     {
 
-    ctx.fillStyle = "rgba(0,0,0,0.05)"; // trail
+    ctx.fillStyle = "rgba(255,255,255,255.05)"; // trail
     ctx.fillRect(0,0,cw,ch);
 
     ctx2.clearRect(0,0,cw,ch);
