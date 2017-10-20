@@ -13,7 +13,7 @@
     maxColums = cw/(fontSize);
     canvas.width = canvas2.width = cw;
     canvas.height = canvas2.height = ch;
-    var change_letter = -1;
+    var change_letter = 0;
 
 
     function randomInt( min, max ) {
@@ -31,8 +31,8 @@
     }
 
     Point.prototype.draw = function(ctx, chance){
-      if(chance % 21 == 0){
-      this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
+      if(chance % 21 == 1){
+      this.value = charArr[randomInt(0,charArr.length)].toUpperCase();
       }
       this.speed = randomFloat(0.2,3);
 
