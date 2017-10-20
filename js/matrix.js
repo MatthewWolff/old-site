@@ -5,7 +5,7 @@
     ctx2 = canvas2.getContext( '2d' ),
 		// full screen dimensions
 		cw = window.innerWidth,
-		ch = window.innerHeight,
+		ch = $(document).height(), // larger than window.innerHeight
     charArr = ['a','c','t','g','u'],
     maxCharCount = 150,
     fallingCharArr = [],
@@ -36,7 +36,7 @@
       }
       this.speed = randomFloat(0.2,3);
 
-      ctx2.fillStyle = "rgba(255,255,255,0.8)";
+      ctx2.fillStyle = "rgba(200,200,200,0.05)";
       ctx2.font = fontSize+"px san-serif";
       ctx2.fillText(this.value,this.x,this.y);
 
