@@ -7,7 +7,7 @@
 		cw = window.innerWidth,
 		ch = window.innerHeight,
     charArr = ['a','c','t','g','u'],
-    maxCharCount = 100,
+    maxCharCount = 150,
     fallingCharArr = [],
     fontSize = 10,
     maxColums = cw/(fontSize);
@@ -31,7 +31,7 @@
     }
 
     Point.prototype.draw = function(ctx, chance){
-      if(chance % 19 == 0){
+      if(chance % 21 == 0){
       this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
       }
       this.speed = randomFloat(0.2,3);
