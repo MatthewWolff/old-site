@@ -34,13 +34,13 @@
       if(chance % 21 == 1){
       this.value = charArr[randomInt(0,charArr.length)].toUpperCase();
       }
-      this.speed = randomFloat(0.2,3);
+      this.speed = randomFloat(0.2,4);
 
-      ctx2.fillStyle = "rgba(200,200,200,0.05)";
+      ctx2.fillStyle = "rgba(200,200,200,0.10)";
       ctx2.font = fontSize+"px san-serif";
       ctx2.fillText(this.value,this.x,this.y);
 
-        ctx.fillStyle = "#333";
+        ctx.fillStyle = "#BEBEBE";
         ctx.font = fontSize+"px san-serif";
         ctx.fillText(this.value,this.x,this.y);
 
@@ -62,7 +62,7 @@
     var update = function()
     {
 
-    ctx.fillStyle = "rgba(255,255,255,0.05)"; // trail
+    ctx.fillStyle = "rgba(255,255,255,0.075)"; // trail
     ctx.fillRect(0,0,cw,ch);
 
     ctx2.clearRect(0,0,cw,ch);
