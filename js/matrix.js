@@ -13,7 +13,7 @@
     maxColums = cw/(fontSize);
     canvas.width = canvas2.width = cw;
     canvas.height = canvas2.height = ch;
-    var change_letter = 0;
+    var change_letter = -1;
 
 
     function randomInt( min, max ) {
@@ -72,7 +72,7 @@
       while (i--) {
         fallingCharArr[i].draw(ctx, change_letter);
         var v = fallingCharArr[i];
-        change_letter = change_letter++ % 19 // keep from changing too often
+        change_letter = ++change_letter % 19 // keep from changing too often
       }
 
       requestAnimationFrame(update);
