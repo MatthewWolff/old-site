@@ -25,6 +25,15 @@ footer
 	font-size: 0.75em;
 	opacity: 0.5;
 }
+.in-front
+{
+  z-index: 10;
+  position: relative;
+}
+.behind
+{
+  position:absolute;top:0;left:0;
+}
 .dark-pill .active a, .dark-pill .action a:hover, .dark-pill .active a:focus
 {	
 	color: #fff;
@@ -47,6 +56,18 @@ footer
     50% { opacity:0; }
     100% { opacity:1; }
 }
+@-webkit-keyframes blink
+{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink
+{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}}
 @-webkit-keyframes blink
 {
     0% { opacity:1; }
